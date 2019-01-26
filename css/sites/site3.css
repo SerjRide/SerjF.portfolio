@@ -320,6 +320,7 @@ header {
     border-bottom: solid 1px #E6E6E6;
     display:flex;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .preFooter a {
     padding-left: 20px;
@@ -602,5 +603,47 @@ header {
   }
   .rightSideBar {
     display: none!important;
+  }
+}
+@media screen and (max-width:620px) {
+  .after-head-2 i {
+    margin-left: 5%;
+  }
+  .after-head-2 i:hover {
+    margin-left: 5%;
+  }
+
+}
+@media screen and (max-width:525px) {
+  .contactBlock {
+    display: none;
+  }
+  .after-head-2 i {
+    margin-left: 12%;
+  }
+  .after-head-2 i:hover {
+    margin-left: 12%;
+  }
+  article {
+    margin-top: 25%;
+  }
+}
+@media screen and (max-width:420px) {
+  .after-head-2 i {
+    margin-left: 4%;
+  }
+  .after-head-2 i:hover {
+    margin-left: 4%;
+  }
+  .center {
+    height: 132%;
+  }
+  .preFooter {
+    border-bottom: solid 0px #E6E6E6;
+  }
+}
+@media screen and (max-width:330px) {
+  .center {
+    height: 1500px;
   }
 }
