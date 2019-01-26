@@ -14,40 +14,98 @@
 .navbar:hover {
   opacity: 1;
 }
-.testContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr ;
-  grid-template-rows: repeat(2,200px);
-  grid-gap:10px;
+header {
+  display: flex;
+  flex-flow: column;
+  background-position:center;
+  background-repeat:no-repeat;
+  margin-top: -1;
+  height: 660px;
+  background-image:url(../../img/site4/background.png);
 }
-.testItem {
-  background-color: #CCFFEE;
-  transition: 0.5s;
+.container {
+  align-self: center!important;
+  max-width: 1268px!important;
 }
-.testItem:hover {
-  opacity:0.6;
+.logo {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 20px;
 }
-@media screen and (max-width:760px){
-  .testContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3,200px);
-    grid-gap:10px;
-
-  }
-  .testItem {
-    background-color: #CCFFEE;
-  }
+.logo img {
+  margin-top: -20px;
+  margin-left: 20px;
 }
-@media screen and (max-width:500px){
-  .testContainer {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,200px);
-    grid-gap:10px;
-
-  }
-  .testItem {
-    background-color: #CCFFEE;
-  }
+.logo ul {
+  margin-right: 20px;
+  padding: 4px;
+}
+.logo ul li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 15px;
+  color: white;
+  font-family: "calibri"!important;
+  font-size: 14pt;
+  font-weight: lighter;
+}
+.logo ul li input {
+  background-color: transparent;
+  color:white;
+  border: solid 1px white;
+  border-radius: 5px;
+  width: auto;
+  height: 40;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+input.btn-orange {
+  background:rgb(211, 114, 24)!important;
+  border:solid 0px orange!important;
+}
+.currentTitle {
+  display: flex;
+  flex-flow: column;
+  justify-content: center!important;
+  align-items: flex-end;
+  height: 500px;
+}
+.currentTitle h1 {
+  text-align: right;
+  /* border: solid 1px red; */
+  margin-right: 35px;
+  color: white;
+  font-family: "calibri"!important;
+  font-weight: 100!important;
+  font-size: 52pt;
+  width: 500px;
+  line-height: 60px;
+  margin-bottom: 0px;
+}
+.currentTitle p {
+  font-family: "calibri"!important;
+  font-weight: 100!important;
+  color: white;
+  margin-right: 35px;
+  font-size: 24pt;
+  margin-top: -10px;
+}
+.currentTitle a {
+  font-family: "calibri"!important;
+  font-weight: 100!important;
+  background:rgb(239, 132, 33)!important;
+  border:solid 0px orange;
+  border-bottom: solid 5px rgb(211,114,24);
+  border-radius: 5px;
+  width: auto;
+  height: 70;
+  color:white;
+  font-size: 20pt;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-right: 35px;
+  padding-top: 15px;
 }
