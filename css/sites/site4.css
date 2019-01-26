@@ -23,6 +23,9 @@ header {
   height: 660px;
   background-image:url(../../img/site4/background.png);
 }
+.toggle-button i {
+  display: none;
+}
 .container {
   align-self: center!important;
   max-width: 1268px!important;
@@ -35,77 +38,338 @@ header {
   padding-top: 40px;
   padding-left: 20px;
 }
-.logo img {
-  margin-top: -20px;
-  margin-left: 20px;
+  .logo img {
+    margin-top: -20px;
+    margin-left: 20px;
+  }
+  .logo ul {
+    margin-right: 20px;
+    padding: 4px;
+  }
+  .logo ul li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 15px;
+    color: white;
+    font-family: "calibri"!important;
+    font-size: 14pt;
+    font-weight: lighter;
+  }
+  .logo ul li input {
+    background-color: transparent;
+    color:white;
+    border: solid 1px white;
+    border-radius: 5px;
+    width: auto;
+    height: 40;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  input.btn-orange {
+    background:rgb(211, 114, 24)!important;
+    border:solid 0px orange!important;
+  }
+  .currentTitle {
+    display: flex;
+    flex-flow: column;
+    justify-content: center!important;
+    align-items: flex-end;
+    height: 500px;
+  }
+    .currentTitle h1 {
+      text-align: right;
+      /* border: solid 1px red; */
+      margin-right: 35px;
+      color: white;
+      font-family: "calibri"!important;
+      font-weight: 100!important;
+      font-size: 52pt;
+      width: 500px;
+      line-height: 60px;
+      margin-bottom: 0px;
+    }
+    .currentTitle p {
+      font-family: "calibri"!important;
+      font-weight: 100!important;
+      color: white;
+      margin-right: 35px;
+      font-size: 24pt;
+      margin-top: -10px;
+    }
+    .currentTitle a {
+      font-family: "calibri"!important;
+      font-weight: 100!important;
+      background:rgb(239, 132, 33)!important;
+      border:solid 0px orange;
+      border-bottom: solid 5px rgb(211,114,24);
+      border-radius: 5px;
+      width: auto;
+      height: 70;
+      color:white;
+      font-size: 20pt;
+      padding-left: 50px;
+      padding-right: 50px;
+      margin-right: 35px;
+      padding-top: 15px;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .rounded {
+      position: absolute;
+      align-self: center;
+      border-radius: 100px!important;
+      width: 0;
+      height: 0;
+      background-color: #FFFFFF;
+      transition: 0.3s;
+      opacity: 0.1;
+      margin-top: -6px;
+    }
+    .currentTitle a:hover .rounded {
+      opacity: 0.1;
+      width: 300;
+      height: 300;
+    }
+article {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 796px;
+  /* background-color: #E6E6E6; */
+  /* border: solid 1px #000000; */
 }
-.logo ul {
-  margin-right: 20px;
-  padding: 4px;
-}
-.logo ul li {
-  display: inline;
-  list-style-type: none;
-  margin-right: 15px;
-  color: white;
-  font-family: "calibri"!important;
-  font-size: 14pt;
-  font-weight: lighter;
-}
-.logo ul li input {
-  background-color: transparent;
-  color:white;
-  border: solid 1px white;
-  border-radius: 5px;
-  width: auto;
-  height: 40;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-input.btn-orange {
-  background:rgb(211, 114, 24)!important;
-  border:solid 0px orange!important;
-}
-.currentTitle {
+  .left-article {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile{
+    background-image: url(../../img/site4/mobile.png);
+    background-repeat: no-repeat;
+    width: 271px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .mobilContent {
+    margin-left: 2px;
+    margin-top: 68px;
+    width: 233px;
+    height: 414px;
+    overflow: hidden;
+    opacity: 0.9;
+  }
+  .mobilContent img {
+    width: 235px;
+    height: auto;
+    transition: 3s;
+    opacity: 0.9;
+  }
+  .mobilContent img:hover {
+    opacity: 1;
+    width: 235px;
+    height: auto;
+    transform: translate(0,-580px);
+  }
+  .right-article {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding-right: 20px;
+    /* width: 450px; */
+    /* border: solid 1px #000000; */
+  }
+    .right-article h2 {
+      font-family: "calibri"!important;
+      font-weight: 100!important;
+      font-size: 4em!important;
+      line-height: 60px;
+      letter-spacing: 5px!important;
+    }
+    .right-article p {
+      font-family: "calibri"!important;
+      font-weight: 100!important;
+      font-size: 14pt!important;
+      color: #696868;
+    }
+    .text-right {
+      /* border: solid 1px red; */
+      width: 600px;
+      padding-right: 400px;
+    }
+.careers {
   display: flex;
   flex-flow: column;
-  justify-content: center!important;
-  align-items: flex-end;
-  height: 500px;
+  background-position:center;
+  background-repeat:no-repeat;
+  margin-top: -1;
+  height: 660px;
+  background-image:url(../../img/site4/careers.png);
 }
-.currentTitle h1 {
-  text-align: right;
-  /* border: solid 1px red; */
-  margin-right: 35px;
-  color: white;
-  font-family: "calibri"!important;
-  font-weight: 100!important;
-  font-size: 52pt;
-  width: 500px;
-  line-height: 60px;
-  margin-bottom: 0px;
+  .currentTitle.center {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+  }
+  .currentTitle.center h2 {
+    padding-top: 70px;
+    text-align: center!important;
+    font-family: "calibri"!important;
+    font-weight: 100!important;
+    font-size: 4em!important;
+    line-height: 60px;
+    letter-spacing: 5px!important;
+    color: white;
+  }
+  .currentTitle.center p {
+    text-align: center;
+    font-size: 16pt;
+    margin-right: 0;
+    width: 600px;
+    /* border: solid 2px red; */
+  }
+  .right-article .currentTitle a {
+    align-self: flex-start;
+  }
+footer {
+  display: flex;
+  background-color: #EDEDED;
+  flex-flow: column;
+  margin-top: -40;
+  height: 350px;
+  width: 100%;
+  margin-bottom:0px;
+  padding-left: 40px;
+  color: #797979;
 }
-.currentTitle p {
-  font-family: "calibri"!important;
-  font-weight: 100!important;
-  color: white;
-  margin-right: 35px;
-  font-size: 24pt;
-  margin-top: -10px;
-}
-.currentTitle a {
-  font-family: "calibri"!important;
-  font-weight: 100!important;
-  background:rgb(239, 132, 33)!important;
-  border:solid 0px orange;
-  border-bottom: solid 5px rgb(211,114,24);
-  border-radius: 5px;
-  width: auto;
-  height: 70;
-  color:white;
-  font-size: 20pt;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin-right: 35px;
-  padding-top: 15px;
+  footer h2 {
+    font-family: "calibri"!important;
+    font-weight: 100!important;
+    font-size: 20pt!important;
+    letter-spacing: 1px!important;
+  }
+  footer ul {
+    padding-left: 0;
+    list-style-type: none;
+    font-family: "calibri"!important;
+    font-weight: 100!important;
+    font-size: 14pt!important;
+  }
+  footer ul li {
+    padding-top: 10px;
+  }
+  footer a {
+    color: #797979!important;
+  }
+  footer a:hover {
+    color: rgb(239, 132, 33)!important;
+    text-decoration: underline;
+  }
+  footer select {
+    margin-top: 45px;
+    border: solid 1px #828282;
+    font-family: "calibri"!important;
+    font-weight: 100!important;
+    font-size: 15pt!important;
+    height: auto;
+    width: auto;
+    color:#828282;
+    cursor: pointer;
+  }
+  footer select option {
+    font-weight: 100!important;
+    font-size: 16pt!important;
+  }
+  footer select:hover {
+    /* font-weight: 100!important; */
+    font-size: 15pt!important;
+    text-decoration: underline;
+    text-decoration-style: solid;
+  }
+  footer .social {
+    /* border: solid 1px red; */
+    margin-top: 50px;
+    font-size: 20pt;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+  }
+  footer .social i {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  footer .social i:hover {
+    color: rgb(239, 132, 33)!important;
+    transform: translate(0px,-3px);
+  }
+@media screen and (min-width:768px) and (max-width:1005px) {
+  header ul {
+    display: none;
+  }
+    .toggle-button i {
+      text-align: center;
+      display: block;
+      cursor: pointer;
+      color: white;
+      font-size: 25pt!important;
+      margin-top: -25px;
+      margin-right: 40px;
+    }
+    .toggle-button i:after{
+      display: block;
+    }
+  .right-article h2 {
+    font-size: 3em!important;
+    line-height: 45px!important;
+  }
+  .right-article .text-right {
+    width:300px;
+  }
+  .text-right a {
+    margin-left: 15px;
+    width: 200px!important;
+  }
+  .right-article a {
+    padding-bottom: 55px;
+    /* border: solid 1px red; */
+  }
+  .careers .currentTitle a  {
+    /* border:solid 1px red; */
+    margin-top: 0px;
+    margin-bottom: -10px;
+  }
+  footer {
+    height: 370px!important;
+    line-height: 1;
+  }
+  .col-md-2 {
+    margin-left: 20px;
+    align-self: flex-start;
+    grid-row: 400px;
+    box-sizing:content-box;
+  }
+  .col-md-2 select {
+    margin-top: 0px;
+  }
+  footer div:nth-child(5) {
+    flex: 1 0 16.666667%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    /* border:solid 1px red; */
+    max-width: 720;
+    height: 30px;
+    padding-top: 30px!important;
+  }
+  .social {
+    margin-left: 50px!important;
+    margin-top: 0px!important;
+  }
+  .social i {
+   padding-left: 20px;
+  }
 }
