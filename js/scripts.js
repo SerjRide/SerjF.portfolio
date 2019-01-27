@@ -1,5 +1,5 @@
-new WOW().init();
-
-$(function () {
+$(document).ready(function(){
   $('[data-toggle="tooltip"]').tooltip()
 })
+
+new WOW().init();

@@ -258,6 +258,15 @@ header {
       color:white;
       background-color: rgb(69,179,242);
     }
+    .menuList:hover .leftSideBarButton {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 40px;
+      height: 40px;
+      color:white;
+      background-color: rgb(69,179,242);
+    }
     .intSideBarButton:hover {
       display: flex;
       justify-content: flex-start;
