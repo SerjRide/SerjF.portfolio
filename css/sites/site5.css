@@ -376,7 +376,7 @@ body {
     }
   .bg-2{
     background: url(../../img/site5/bg1.png) no-repeat;
-    background-size:auto;
+    background-size:cover;
     background-position:center;
     background-attachment: fixed;
     width: 100%;
