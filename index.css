@@ -172,7 +172,15 @@ footer{
     margin-left: 10px;
   }
 }
-
+@media only screen and (max-width: 768px) {
+  .ability{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 150px;
+    grid-gap: 10px;
+    margin-bottom: 100px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .recent-works {
     display: flex;
