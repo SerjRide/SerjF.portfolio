@@ -541,9 +541,7 @@ header {
   }
 }
 @media screen and (max-width:767px) {
-  body {
-    overflow:hidden;
-  }
+
   .center {
     padding-right: 0%!important;
     padding-left: 0%!important;
