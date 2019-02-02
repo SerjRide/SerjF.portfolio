@@ -154,7 +154,11 @@ footer{
   background-color: #F5F5F5!important;
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1600px) {
+=======
+@media screen and (max-width: 1600px) {
+>>>>>>> 5077fc4f7e14d669151776331c65e6181a7a896b
   .recent-works {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -163,7 +167,11 @@ footer{
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 1200px) {
+=======
+@media screen and (max-width: 1200px) {
+>>>>>>> 5077fc4f7e14d669151776331c65e6181a7a896b
   .navbar {
     background-color: #F5F5F5!important;
     margin-right: 10px;
@@ -171,7 +179,11 @@ footer{
   }
 }
 
+<<<<<<< HEAD
 @media only screen and (max-width: 600px) {
+=======
+@media screen and (max-width: 600px) {
+>>>>>>> 5077fc4f7e14d669151776331c65e6181a7a896b
   .recent-works {
     display: flex;
     flex-direction: column;
