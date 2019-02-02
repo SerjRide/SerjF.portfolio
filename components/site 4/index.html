@@ -6,126 +6,146 @@
   <meta name="description" content="SerjRide Portfolio" />
   <meta name="keywords" content="SerjRide Portfolio" />
   <meta name="viewport" content="width=device-width" />
-  <link href="http://mysite.local/img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link href="http://mysite.local/img/favicon.ico"
+    rel="shortcut icon"
+    type="image/x-icon" />
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    crossorigin="anonymous">
   <link type="text/css" rel="stylesheet" href="../../index.css">
   <link type="text/css" rel="stylesheet" href="../../css/animate.css">
   <link type="text/css" rel="stylesheet" href="index.css">
+  <link rel='stylesheet' href='../../css/nprogress.css'/>
 </head>
 <body>
-  <!-- Подключение верхнего меню -->
-  <script>var link=document.querySelector('link[rel="import"]');var content=link.import.querySelector('#import-nav');document.body.appendChild(content.cloneNode(true));</script>
-    <header>
-      <div class="container">
-        <div class="logo wow fadeIn">
-          <img src="../../img/site4/logo.png"></a>
-            <label for="menu-checkbox" class="toggle-button"onclick>
-              <i class="fas fa-bars"></i>
-            </label>
-            <ul>
-              <li>Проекты</li>
-              <li>Услуги</li>
-              <li>Контакты</li>
-              <li>Творчество</li>
-              <li>Статьи</li>
-              <li>Разное</li>
-              <li><input type="button" value="Вход"/></li>
-              <li><input class="btn-orange" type="button" value="Регистрация"/></li>
-            </ul>
-        </div>
-        <div class="currentTitle wow fadeInLeft">
-          <h1>Drive Business Results</h2>
-          <p>Personal magazine designer</p>
-          <a href="#"><span class="rounded"></span>Узнать Больше</a>
+<header>
+  <script src='../../js/nprogress.js'></script>
+  <script>
+
+    NProgress.inc();
+
+  </script>
+  <script>
+
+    window.addEventListener('load',function(){
+      NProgress.done();
+    });
+
+  </script>
+  <div class="container">
+    <div class="logo wow fadeIn">
+      <img src="../../img/site4/logo.png"></a>
+        <label for="menu-checkbox" class="toggle-button"onclick>
+          <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+          <li>Проекты</li>
+          <li>Услуги</li>
+          <li>Контакты</li>
+          <li>Творчество</li>
+          <li>Статьи</li>
+          <li>Разное</li>
+          <li><input type="button" value="Вход"/></li>
+          <li><input class="btn-orange" type="button" value="Регистрация"/></li>
+        </ul>
+    </div>
+    <div class="currentTitle wow fadeInLeft">
+      <h1>Drive Business Results</h2>
+      <p>Personal magazine designer</p>
+      <a href="#"><span class="rounded"></span>Узнать Больше</a>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <article>
+      <div class="left-article">
+        <div class="mobile wow fadeInLeft">
+          <div class="mobilContent">
+            <img class="img-responsive"
+              src="http://SerjF.portfolio/img/site2/content1.png"/>
+          </div>
         </div>
       </div>
-    </header>
-    <div class="container">
-      <article>
-          <div class="left-article">
-            <div class="mobile wow fadeInLeft">
-              <div class="mobilContent">
-                <img class="img-responsive" src="http://SerjF.portfolio/img/site2/content1.png"/>
-              </div>
-            </div>
-          </div>
-          <div class="right-article">
-            <div class="currentTitle wow fadeIn">
-            <h2>Приветствуем Вас на нашем сайте:</h2>
-            <p>
-              Мы делаем дизайн интерьера любой сложности. От самого экономичного декора
-              помещения до самого сложного дизайн проекта интерьера, с нестандартными
-              решениями. Ещё задолго до начала строительных работ, Вы получите
-              удивительную возможность – пройти по виртуальному интерьеру квартиры,
-              офиса, магазина, кафе.
-            </p>
-            <a href="#"><span class="rounded"></span>Начать</a>
-            </div>
-          </div>
-      </article>
-    </div>
-    <div class="careers">
-      <div class="currentTitle center">
-        <h2 class="wow fadeInDown">Careers</h2>
-        <p class="wow fadeIn">
-          Если Вы не планируете грандиозного строительства и предпочитаете сделать
-          дизайн интерьера своими руками, мы предлагаем Вам советы по дизайну
-          интерьера, с разовым выездом дизайнера на объект. Дизайнер поможет Вам
-          сориентироваться в огромном рынке отделочных материалов и оборудования.
+      <div class="right-article">
+        <div class="currentTitle wow fadeIn">
+        <h2>Приветствуем Вас на нашем сайте:</h2>
+        <p>
+          Мы делаем дизайн интерьера любой сложности. От самого экономичного декора
+          помещения до самого сложного дизайн проекта интерьера, с нестандартными
+          решениями. Ещё задолго до начала строительных работ, Вы получите
+          удивительную возможность – пройти по виртуальному интерьеру квартиры,
+          офиса, магазина, кафе.
         </p>
-        <a class="wow fadeIn" href="#"><span class="rounded"></span>Узнать Больше</a>
+        <a href="#"><span class="rounded"></span>Начать</a>
+        </div>
+      </div>
+  </article>
+</div>
+<div class="careers">
+  <div class="currentTitle center">
+    <h2 class="wow fadeInDown">Careers</h2>
+    <p class="wow fadeIn">
+      Если Вы не планируете грандиозного строительства и предпочитаете сделать
+      дизайн интерьера своими руками, мы предлагаем Вам советы по дизайну
+      интерьера, с разовым выездом дизайнера на объект. Дизайнер поможет Вам
+      сориентироваться в огромном рынке отделочных материалов и оборудования.
+    </p>
+    <a class="wow fadeIn" href="#"><span class="rounded"></span>Узнать Больше</a>
+  </div>
+</div>
+<footer>
+  <div class="row">
+    <div class="col-md-2">
+      <h2><a href="#">Advertisers</a></h2>
+      <ul>
+        <li><a href="#">Advertisers FAQ</a></li>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Native Advertising</a></li>
+        <li><a href="#">Content Marketing</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <h2><a href="#">Publishers</a></h2>
+      <ul>
+        <li><a href="#">Publishers FAQ</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <h2><a href="#">Company</a></h2>
+      <ul>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Offices</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <h2><a href="#">Blog</a></h2>
+      <ul>
+        <li><a href="#">Tech Blog</a></li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <select name="language">
+        <option>Русский (RU)</option>
+        <option>English (US)</option>
+      </select>
+      <div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-vk"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-vimeo-v"></i>
       </div>
     </div>
-    <footer>
-      <div class="row">
-        <div class="col-md-2">
-          <h2><a href="#">Advertisers</a></h2>
-          <ul>
-            <li><a href="#">Advertisers FAQ</a></li>
-            <li><a href="#">Case Studies</a></li>
-            <li><a href="#">Native Advertising</a></li>
-            <li><a href="#">Content Marketing</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h2><a href="#">Publishers</a></h2>
-          <ul>
-            <li><a href="#">Publishers FAQ</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h2><a href="#">Company</a></h2>
-          <ul>
-            <li><a href="#">Leadership</a></li>
-            <li><a href="#">Offices</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <h2><a href="#">Blog</a></h2>
-          <ul>
-            <li><a href="#">Tech Blog</a></li>
-          </ul>
-        </div>
-        <div class="col-md-2">
-          <select name="language">
-            <option>Русский (RU)</option>
-            <option>English (US)</option>
-          </select>
-          <div class="social">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-vk"></i>
-            <i class="fab fa-youtube"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-vimeo-v"></i>
-          </div>
-        </div>
-      </div>
-    </footer>
+  </div>
+</footer>
 <script
   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
   integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
