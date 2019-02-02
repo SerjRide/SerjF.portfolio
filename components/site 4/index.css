@@ -14,6 +14,11 @@
 .navbar:hover {
   opacity: 1;
 }
+
+.col-md-2 {
+  width: 75%;
+}
+
 header {
   display: flex;
   flex-flow: column;
@@ -512,10 +517,22 @@ footer {
   .logo {
     padding-left: 0px;
   }
+
   .container {
-    padding-left: 20!important;
-    padding-right: 20!important;
+    width: auto;
+    padding-right: 0;
+    padding-left: 0;
   }
+
+  .currentTitle h1, .currentTitle p, .currentTitle a {
+    margin-right: 0;
+  }
+
+  .right-article {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
   h1 {
     font-size: 3em!important;
     width: auto!important;
