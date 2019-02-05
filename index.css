@@ -150,10 +150,13 @@ footer{
   grid-column: 3 / 5
 }
 
+.about p {
+  padding: 0 20% 0 20%;
+}
+
 #import-nav{
   background-color: #F5F5F5!important;
 }
-
 
 @media only screen and (max-width: 1600px) {
 
@@ -181,9 +184,12 @@ footer{
     grid-gap: 10px;
     margin-bottom: 100px;
   }
-
+  .about p {
+    padding: 0 10% 0 10%;
+  }
 }
 @media only screen and (max-width: 600px) {
+
   .recent-works {
     display: flex;
     flex-direction: column;
@@ -196,5 +202,9 @@ footer{
     margin-bottom: 10px;
     overflow: hidden;
     height: 250px;
+  }
+
+  .about p {
+    padding: 0 2% 0 2%;
   }
 }
