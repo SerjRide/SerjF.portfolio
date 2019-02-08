@@ -161,7 +161,7 @@ body {
   /* border: solid 1px red; */
 }
 .bg-1{
-  background: url(../../img/site1/bg1.png) no-repeat;
+  background: url(../../img/site5/bg1.png) no-repeat;
   background-size:cover;
   background-position: center;
   width: 100%;
@@ -745,6 +745,13 @@ body {
   .row-4 .right {
     padding-left: 7%;
   }
+
+  #import-nav{
+    opacity: 1;
+  }
+  .navbar {
+    opacity: 1;
+  }
 }
 
 @media screen and (max-width:390px){
@@ -754,12 +761,5 @@ body {
 
   .row-5 .top div.grid {
     padding-top: 0;
-  }
-
-  #import-nav{
-    opacity: 1;
-  }
-  .navbar {
-    opacity: 1;
   }
 }
