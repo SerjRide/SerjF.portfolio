@@ -2,6 +2,20 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather');
 @import url('https://fonts.googleapis.com/css?family=Old+Standard+TT');
 
+#import-nav{
+  width: 100%;
+  position: fixed;
+  opacity: 1;
+  transition: 1s;
+  z-index: 3;
+}
+
+
+.navbar {
+  opacity: 1;
+  transition: 1s;
+}
+
 body {
   color:#333;
   overflow-x:hidden;
@@ -122,23 +136,27 @@ footer{
 }
 
 .recent-works {
-  display: grid;
-  grid-template-columns: repeat(4,300px);
-  grid-template-rows: 300px 300px 300px;
-  grid-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.recent-works div{
+.recent-works a{
+  display: block;
+  margin: 20px;
   overflow: hidden;
+  width: 550px;
+  text-align: center;
 }
 
 .recent-works img {
-  opacity: 0.9;
+  opacity: 0.7;
   transition: 0.3s;
+  width: 100%;
 }
 
 .recent-works img:hover {
-  opacity: 0.9;
+  opacity: 1;
   transform: scale(1.05);
 }
 
@@ -156,16 +174,6 @@ footer{
 
 #import-nav{
   background-color: #F5F5F5!important;
-}
-
-@media only screen and (max-width: 1600px) {
-
-  .recent-works {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -187,6 +195,9 @@ footer{
   .about p {
     padding: 0 10% 0 10%;
   }
+  .recent-works a{
+    width: 84%;
+  }
 }
 @media only screen and (max-width: 600px) {
 
@@ -206,5 +217,9 @@ footer{
 
   .about p {
     padding: 0 2% 0 2%;
+  }
+
+  #import-nav{
+    opacity: 1;
   }
 }

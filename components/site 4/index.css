@@ -3,13 +3,15 @@
   position: fixed;
   opacity: 0;
   transition: 1s;
+  z-index: 3;
+}
+
+#import-nav:hover{
+  opacity: 1;
 }
 .navbar {
-  opacity: 0;
-  transition: 1s;
-}
-#import-nav:hover {
   opacity: 1;
+  transition: 1s;
 }
 .navbar:hover {
   opacity: 1;
@@ -179,7 +181,7 @@ article {
     opacity: 1;
     width: 235px;
     height: auto;
-    transform: translate(0,-580px);
+    transform: translate(0,-1050px);
   }
   .right-article {
     display: flex;
@@ -514,6 +516,20 @@ footer {
   }
 }
 @media screen and (max-width:490px){
+
+  header {
+    margin-top: 50px;
+  }
+
+  #import-nav{
+    margin-top: -50px;
+    opacity: 1;
+  }
+
+  .navbar {
+    opacity: 1;
+  }
+
   .logo {
     padding-left: 0px;
   }

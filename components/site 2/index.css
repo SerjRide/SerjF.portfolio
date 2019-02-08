@@ -377,4 +377,11 @@ header img {
     margin-left: 75px;
     height: 60px!important;
   }
+
+  #import-nav{
+    opacity: 1;
+  }
+  .navbar {
+    opacity: 1;
+  }
 }
