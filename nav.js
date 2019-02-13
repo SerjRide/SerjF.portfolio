@@ -3,7 +3,7 @@ $('#import-nav').html(
   `<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">
       <img width="25"
-        src="./img/logo_black.png"
+        src="${link}/img/logo_black.png"
         alt="logo"/>
     </a>
     <button class="navbar-toggler"
