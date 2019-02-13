@@ -1,4 +1,4 @@
-const link = 'serjride.local'
+const link = 'serjride.github.io'
 $('#import-nav').html(
   `<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">

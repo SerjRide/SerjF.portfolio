@@ -28,59 +28,35 @@
   <link rel="stylesheet" href="css/animate.css">
 </head>
 <body>
-<div id="import-nav">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/">
-      <img width="25"
-        src="./img/logo_black.png"
-        alt="logo"/>
-    </a>
-    <button class="navbar-toggler"
-      type="button" data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto "></ul>
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="/">HOME</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-            href="#" id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false">
-            WORKS
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item"
-              href="./components/site 1">
-              Сайт 1
-            </a>
-            <a class="dropdown-item"
-              href="./components/site 2">
-              Сайт 2
-            </a>
-            <a class="dropdown-item"
-              href="./components/site 3">
-              Сайт 3
-            </a>
-            <a class="dropdown-item"
-              href="./components/site 4">
-              Сайт 4
-            </a>
+
+  <div class="modal fade" id="siteDescription" tabindex="-1"
+        role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title modalName"></h5>
+          <button type="button" class="close"
+            data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body container">
+          <div class="row">
+            <div class="col-xl-12 modalText"></div>
+            <div class="col-xl-12 spanText"></div>
+            <div class="col-xl-12 center-block modalImg"></div>
           </div>
-        </li>
-      </ul>
+        </div>
+        <div class="modal-footer">
+          <a class="aUnderModal modalLink" target="_blank">
+            Перейти на стриницу
+          </a>
+        </div>
+      </div>
     </div>
-  </nav>
-</div>
+  </div>
+
+<div id="import-nav"></div>
 
 <div class="intro">
   <h1 class="font-special text-uppercase text-center wow fadeInDown">
@@ -133,21 +109,21 @@
 <div class="jumbotron">
   <h2 class="font-special text-center wow fadeInDown">PORTFOLIO</h2>
   <div class="recent-works wow fadeIn">
-    <a class="portfolio-block"
-      href="./components/site 1">
-      <img src="../../img/portfolio/p1.jpg" alt="">
+    <a id="modal-1" class="portfolio-block" data-toggle="modal"
+      data-target="#siteDescription">
+      <img class="imgUnderRecWorck" src="../../img/portfolio/p1.jpg" alt="">
     </a>
-    <a class="portfolio-block"
-      href="./components/site 2">
-      <img src="../../img/portfolio/p2.jpg" alt="">
+    <a id="modal-2" class="portfolio-block" data-toggle="modal"
+      data-target="#siteDescription">
+      <img class="imgUnderRecWorck" src="../../img/portfolio/p2.jpg" alt="">
     </a>
-    <a class="portfolio-block"
-      href="./components/site 3">
-      <img src="../../img/portfolio/p3.jpg" alt="">
+    <a id="modal-3" class="portfolio-block" data-toggle="modal"
+      data-target="#siteDescription">
+      <img class="imgUnderRecWorck" src="../../img/portfolio/p3.jpg" alt="">
     </a>
-    <a class="portfolio-block"
-      href="./components/site 4">
-      <img src="../../img/portfolio/p4.jpg" alt="">
+    <a id="modal-4" class="portfolio-block" data-toggle="modal"
+      data-target="#siteDescription">
+      <img class="imgUnderRecWorck" src="../../img/portfolio/p4.jpg" alt="">
     </a>
   </div>
 </div>
@@ -175,5 +151,7 @@
 </script>
 <script src="js/wow.min.js"></script>
 <script src="./js/main.js"></script>
+<script src="nav.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
