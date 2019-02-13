@@ -10,7 +10,7 @@ body {
 }
 #import-nav{
   width: 100%;
-  position: fixed; 
+  position: fixed;
   opacity: 0;
   transition: 1s;
   z-index: 2;
