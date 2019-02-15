@@ -27,34 +27,6 @@ $('#import-nav').html(
         <li id="nav-about" class="nav-item active">
           <a class="nav-link" href="#about">ABOUT</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle"
-            href="#" id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false">
-            WORKS
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item"
-              href="http://${link}/components/site%201/">
-              SH white decision
-            </a>
-            <a class="dropdown-item"
-              href="http://${link}/components/site%202/">
-              SP black decision
-            </a>
-            <a class="dropdown-item"
-              href="http://${link}/components/site%203/">
-              SH dark decision
-            </a>
-            <a class="dropdown-item"
-              href="http://${link}/components/site%204/">
-              SH colorful solution
-            </a>
-          </div>
-        </li>
       </ul>
     </div>
   </nav>`
