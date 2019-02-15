@@ -77,4 +77,28 @@ function navScroll(exp, scrollCent) {
   });
 }
 
-$(document).on('scroll',() => navScroll(exp, scrollCent));
+$(document).on('scroll',() => {
+  navScroll(exp, scrollCent)
+  let punct = $('#engLang').offset().top - 150;
+  if ($(document).scrollTop() >= punct ){
+    $(".up-button").fadeIn(300)
+  }else $(".up-button").fadeOut(100)
+});
+
+$('.up').on('click',function() {
+  $('html, body').animate({ scrollTop: 0 }, 500);
+});
+
+$('#nav-home').on('click',function() {
+  $('html, body').animate({ scrollTop: 0 }, 500);
+});
+
+$('#nav-portfolio').on('click',function() {
+  let punct = $('#portfolio').offset().top;
+  $('html, body').animate({ scrollTop: punct }, 500);
+});
+
+$('#nav-about').on('click',function() {
+  let punct = $('#about').offset().top;
+  $('html, body').animate({ scrollTop: punct }, 500);
+});

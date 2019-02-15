@@ -19,7 +19,13 @@ $('#import-nav').html(
       <ul class="navbar-nav mr-auto "></ul>
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="/">HOME</a>
+          <a id="nav-home" class="nav-link" href="#">HOME</a>
+        </li>
+        <li class="nav-item active">
+          <a id="nav-portfolio" class="nav-link" href="#portfolio">PORTFOLIO</a>
+        </li>
+        <li id="nav-about" class="nav-item active">
+          <a class="nav-link" href="#about">ABOUT</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle"
