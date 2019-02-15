@@ -64,3 +64,17 @@ $('.portfolio ul li').on("click",(e) => {
     showHide(e.target.innerHTML);
   }
 });
+
+let scrollCent = 0.002;
+let exp = $(document).scrollTop() * scrollCent
+
+function navScroll(exp, scrollCent) {
+  if ($(document).scrollTop() <= 100) {
+    exp = $(document).scrollTop() * scrollCent;
+  }else exp = 0.25;
+  $('.transBg').css({
+    backgroundColor: `rgba(136, 136, 136, ${exp})`
+  });
+}
+
+$(document).on('scroll',() => navScroll(exp, scrollCent));

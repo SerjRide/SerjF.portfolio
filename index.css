@@ -14,7 +14,7 @@
   height: 59px;
   width: 100%;
   position: absolute;
-  background-color: rgba(136, 136, 136, 0.24);
+  background-color: rgb(136,136,136,0.0);
 }
 
 .navbar {
@@ -204,7 +204,7 @@ footer{
   flex-direction: column;
   justify-content: center;
   border-radius: 0;
-  background-color: #FFF!important;
+  background-color: #edeeef!important;
 }
 
 .jumbotron-gray {
@@ -392,7 +392,7 @@ footer{
   }
 
   .portfolio h2 {
-    padding-top: 180px;
+    padding-top: 60px;
   }
 
   .changeLang p {
