@@ -88,7 +88,7 @@ footer{
   align-items: center;
   border: solid 0px red;
   height:100%;
-  background-image: url('img/home/intro.png');
+  background-image: url('./img/home/intro.png');
   background-size: cover;
 }
 
