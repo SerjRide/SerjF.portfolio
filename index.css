@@ -87,9 +87,14 @@ footer{
   justify-content: center;
   align-items: center;
   border: solid 0px red;
-  height:100%;
+  height:135%;
   background-image: url('./img/home/intro.png');
   background-size: cover;
+  z-index: 1;
+}
+
+.intro .container {
+  margin-bottom:160px;
 }
 
   .changeLang {
@@ -140,6 +145,45 @@ footer{
   .changeLang input:focus {
     outline: 0;
   }
+
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height:auto;
+  padding-bottom: 5%;
+  margin-top: -140;
+  transition: 1s;
+}
+
+.portfolio h2 {
+  margin-top: 0;
+  padding-top: 80px;
+}
+
+.portfolio ul {
+  padding-left: 0;
+}
+
+.portfolio ul li {
+  list-style-type: none;
+  cursor: pointer;
+  display: inline;
+  padding-left: 20px;
+  transition: 0.5s;
+  color: #9A9A9A;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+}
+
+.portfolio ul li:hover {
+  text-decoration-color: #9A9A9A;
+}
+
+.portfolio ul li.active {
+  text-decoration-color: #9A9A9A;
+}
 
 .font-special {
   font-family:'Dosis',sans-serif!important;
@@ -195,9 +239,16 @@ footer{
   display: block;
   margin: 20px;
   overflow: hidden;
-  width: 550px;
+  width: 300px;
   text-align: center;
   cursor: pointer;
+}
+
+.recent-works a p {
+  font-family: Calibri !important;
+  font-size: 12pt;
+  padding-top: 8px;
+  color: #808080;
 }
 
 .modalName {

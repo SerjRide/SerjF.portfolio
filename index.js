@@ -38,3 +38,29 @@ $("#modal-4").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 4')
 });
+
+$('div.web-works').show(300);
+$('div.ui-works').fadeOut(100);
+
+function showHide(name) {
+  if (name == "Web-design") {
+    $('div.web-works').show(300);
+    $('div.ui-works').fadeOut(100);
+  }else{
+    $('div.ui-works').show(300);
+    $('div.web-works').fadeOut(100);
+  }
+}
+
+
+$('.portfolio ul li').on("click",(e) => {
+  if (e.target.className == 'active') {
+    $('.portfolio ul li').removeClass('disabled');
+    e.target.className = 'disabled'
+    showHide(e.target.innerHTML);
+  }else{
+    $('.portfolio ul li').removeClass('active');
+    e.target.className = 'active'
+    showHide(e.target.innerHTML);
+  }
+});
