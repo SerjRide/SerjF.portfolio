@@ -92,6 +92,55 @@ footer{
   background-size: cover;
 }
 
+  .changeLang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+  }
+
+  .changeLang p {
+    /* border: solid 1px green; */
+    margin: 0;
+    font-family: 'Dosis',sans-serif!important;
+    letter-spacing: 9px;
+    font-size: 8pt;
+    font-weight: bold;
+    color: #555;
+  }
+
+  .changeLang input#ruLang {
+    /* border: solid 1px yellow; */
+    width: 95px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: transparent;
+    background-image: url('./img/home/ruLang.png');
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+
+  .changeLang input#engLang {
+    /* border: solid 1px yellow; */
+    width: 95px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: transparent;
+    background-image: url('./img/home/engLang.png');
+    background-size: contain;
+    cursor: pointer;
+    background-repeat: no-repeat;
+  }
+
+  .changeLang input:focus {
+    outline: 0;
+  }
+
 .font-special {
   font-family:'Dosis',sans-serif!important;
   letter-spacing:16px;
