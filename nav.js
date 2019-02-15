@@ -1,9 +1,10 @@
-const link = 'serjride.github.io'
+const link = 'serjride.local'
 $('#import-nav').html(
-  `<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  `<div class="transBg"></div>
+  <nav class="navbar navbar-expand-lg navbar-light">
     <a class="navbar-brand" href="/">
       <img width="25"
-        src="http://${link}/img/logo_black.png"
+        src="./img/logo_black.png"
         alt="logo"/>
     </a>
     <button class="navbar-toggler"
