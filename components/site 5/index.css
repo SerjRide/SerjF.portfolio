@@ -24,7 +24,7 @@ nav, .slide-bar, .tag-bar   {
 
 nav {
   display: inline;
-  position: fixed;
+  position: absolute;
   padding-top: 5px;
 }
 
@@ -73,11 +73,14 @@ nav a:hover ,.slide-bar a:hover, .tag-bar a:hover {
 }
 
 
+
 .my-container {
   background-image: url('../../img/site5/bg.png');
   width: 100%;
   height: 100%;
   background-size: cover;
+  background-position: left bottom;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
 }
@@ -89,6 +92,7 @@ nav a:hover ,.slide-bar a:hover, .tag-bar a:hover {
   height: 80%;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .logo h1 {
@@ -110,11 +114,119 @@ nav a:hover ,.slide-bar a:hover, .tag-bar a:hover {
   text-align: center;
 }
 
+.article-container {
+  display: flex;
+  justify-content: center;
+}
+
+article.contant {
+  display: none;
+  position:absolute;
+  margin-top: 101px;
+  width: 50%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.34);
+}
+
+.contant img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+.contant p {
+  font-family: Calibri;
+  color: white;
+  font-size: 14pt;
+  margin: 15px;
+}
+
+.hidde-gallery {
+  display: none;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery {
+  position:absolute;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 101px;
+  background-color: rgba(0, 0, 0, 0.34);
+  width: 80%;
+  justify-content: space-between;
+}
+
+.gallery .hidde {
+  margin: 10px;
+  overflow: hidden;
+}
+
+.gallery img {
+  width: 301px;
+  height: 223px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale3d(1,1,1);
+}
+
+.gallery img:hover {
+  opacity: 1;
+  transform: scale3d(1.1,1.1,1.1);
+}
+
+.gallery div {
+  text-align: center;
+}
+
+.gallery p {
+  font-family: Calibri;
+  margin: 0;
+  color: white;
+}
+
 @keyframes shine {
   0% {
     text-shadow: 0 0 0px white;
   }
   100% {
     text-shadow: 0 0 5px white;
+  }
+}
+
+@media screen and (max-width: 949px) {
+  article.contant {
+    margin-top: 128px;
+    height: auto;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  article.contant {
+    margin-top: 128px;
+    height: auto;
+    width: 94%;
+  }
+}
+
+@media screen and (max-width: 502px) {
+  article.contant {
+    margin-top: 157px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  article.contant {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 378px) {
+  article.contant {
+    margin-top: 183px;
   }
 }
