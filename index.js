@@ -38,6 +38,16 @@ $("#modal-4").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 4')
 });
+$("#modal-5").on("click",() => {
+  $('.modalName').text(`Star Claster`);
+  $('.modalText')
+    .text(`Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.`);
+  $('.spanText').html('<span>Используемые технологии: </span> HTML5, CSS3, Flexbox, CSS animation, JavaScript, jQuery UI');
+  $('.modalImg')
+    .html('<img class="imgUnderModel" src="../../img/portfolio/p5.jpg">')
+  $('.modalLink')
+    .attr('href','./components/site 5')
+});
 
 $('div.web-works').show(300);
 $('div.ui-works').fadeOut(100);

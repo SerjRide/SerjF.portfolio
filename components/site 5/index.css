@@ -1,0 +1,120 @@
+@import url('http://allfont.ru/allfont.css?fonts=montserrat');
+@font-face {
+  font-family: 'GulimChe';
+  src: url('./font/GulimChe.ttf')  format('truetype'),
+       url('./font/GulimChe.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  font-family: "Montserrat";
+  color: white;
+}
+
+nav, .slide-bar, .tag-bar   {
+  width: 100%;
+  height: 36px;
+  background-color: rgba(255, 255, 255, 0.14);
+}
+
+nav {
+  display: inline;
+  position: fixed;
+  padding-top: 5px;
+}
+
+.nav-right {
+  float: right;
+  margin-right: 20px;
+}
+
+.nav-left {
+  margin-left: 20px;
+}
+
+.slide-bar, .tag-bar {
+  display: flex;
+  position: absolute;
+  margin-top:41px;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.tag-bar a {
+  font-size: 12pt!important;
+  padding-right: 10px;
+  text-transform: uppercase;
+}
+
+i.my {
+  margin-top: 11px;
+  color: white;
+  font-size: 5pt;
+  padding-right: 13px;
+  padding-left: 13px;
+}
+
+nav a, .slide-bar a, .tag-bar a {
+  font-size: 17pt;
+  text-decoration-color: transparent;
+  transition: 0.5s;
+  float: left;
+}
+
+nav a:hover ,.slide-bar a:hover, .tag-bar a:hover {
+  text-decoration-color: white;
+}
+
+
+.my-container {
+  background-image: url('../../img/site5/bg.png');
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  font-size: 62pt;
+  color: white;
+  font-family: "GulimChe";
+  animation: shine 0.5s linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  margin-bottom: 10px;
+}
+
+.logo small {
+  color: white;
+  font-family: "GulimChe";
+  font-size: 10pt;
+  font-weight: bold;
+  letter-spacing: 13px;
+  text-align: center;
+}
+
+@keyframes shine {
+  0% {
+    text-shadow: 0 0 0px white;
+  }
+  100% {
+    text-shadow: 0 0 5px white;
+  }
+}
