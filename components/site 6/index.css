@@ -1,0 +1,173 @@
+a {
+  color: white;
+}
+
+iframe {
+  opacity: 0.5;
+}
+
+.about h2  {
+  padding: 0px 0 10px 18px;
+}
+
+.navbar {
+  margin-left: 202px;
+  padding: 0;
+}
+
+.container {
+  padding-left: 6px;
+}
+
+.jumbotron.news {
+  padding: 10px 21px 0 41px;
+}
+
+.jumbotron.news img {
+  width: 500px;
+  float: left;
+  padding-right: 10px;
+  opacity: 0.8;
+  transform: scale3d(1,1,1);
+}
+
+.col-xl-12.pb-2.my {
+  padding-left: 0;
+}
+
+.my-bg {
+  background-image: url('./img/bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.sidebar-fixed {
+  height: 100vh;
+  width: 200px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.58);
+  z-index: 1;
+}
+
+.sidebar-fixed img {
+  padding: 10px 62px 10px 17px;
+}
+
+article {
+  display: flex;
+  justify-content: flex-start;
+}
+
+div.content {
+  margin-left: 200px;
+  width: 100%;
+  height: auto;
+}
+
+.mdb-color.lighten-2 {
+  background-color: rgba(0,0,0,0)!important;
+}
+
+.jumbotron.contact {
+  padding: 22px;
+}
+
+.form-control.mb-4.my {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #828282;
+}
+
+.browser-default.custom-select.mb-4.my {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #828282;
+}
+
+.form-control.rounded-0.my {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #828282;
+}
+
+.mdb-select {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.col-sm-12.col-md-6 {
+  padding: 18px 10px 0px 10px;
+}
+
+div.dataTables_wrapper div.dataTables_length.d-flex.flex-row label {
+  margin: 0!important;
+  padding: 4px 20px 0 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+
+}
+
+div.dataTables_wrapper div.dataTables_filter {
+  margin: 0!important;
+  padding: 4px 9px 0 0;
+}
+
+div.dataTables_wrapper div.dataTables_filter input {
+  margin-bottom: 20px;
+  padding: 0;
+  color: white;
+}
+
+div.dataTables_wrapper div.dataTables_filter input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.md-form input[type=search]:focus:not([readonly]) {
+  box-shadow: 0 1px 0 0 #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: #4285f438;
+}
+
+.pagination .page-item.active .page-link:hover {
+  background-color: #4285f438;
+}
+
+.pagination .page-item.active .page-link:focus {
+  background-color: #4d89ee6e;
+}
+
+.pagination .page-item .page-link:hover {
+  background-color: #eeeeee69;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.jumbotron.mdb-color.lighten-2.white-text.dash {
+  box-shadow: 0 0 0 black;
+  padding: 20px;
+}
+
+#preChart {
+  opacity: 0.7;
+}
+
+#goals {
+  opacity: 0.7;
+}
+
+.card {
+  margin-top: 20px;
+}
+
+.col-md-2.my section {
+  font-size: 24pt;
+}
+
+.col-md-2.my small {
+  font-size: 40%;
+}
