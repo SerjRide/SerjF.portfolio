@@ -27,41 +27,12 @@
     }else tags.hide("blind", 100);
   });
 
-  function resize() {
-    const size = $(document).width();
-    switch (true) {
-      case size >= 949 :
-        $('.my-container').css({'height':'143%'});
-        break;
-      case size < 949 && size > 781:
-        $('.my-container').css({'height':'148%'});
-        break;
-      case size < 781 && size > 724:
-        $('.my-container').css({'height':'144%'});
-        break;
-      case size < 724 && size > 369:
-        $('.my-container').css({'height':'157%'});
-        break;
-      case size < 369 && size > 349:
-        $('.my-container').css({'height':'161%'});
-        break;
-      case size < 349 && size > 320:
-        $('.my-container').css({'height':'200%'});
-        break;
-      default: $('.my-container').css({'height':'200%'});
-    };
-    console.log(size);
-    console.log(size > 949);
-  }
+
 
   $(".menu-button").on('click',() => {
     $('.hidde-gallery').hide('blind', 100);
     $('.logo').hide("fade", 300);
     $('.contant').show('blind', 100);
-    resize();
-    $(window).resize(function(){
-      resize();
-    });
   });
 
   $("#info").on('click',() => {
@@ -82,7 +53,7 @@
 
   $("#gallery").on('click',() => {
     $('.logo').hide("fade", 300);
-    resize();
+
     $('.contant').hide('blind', 100);
     $('.hidde-gallery').show('blind', 300);
   });
@@ -101,4 +72,12 @@
     tags.removeClass('active').addClass('disabled');
     $('.logo').show("fade", 2000);
     $('.my-container').css({'height':'100%'});
+  });
+
+  $(`.article-container, .hidde-gallery, .my-container,
+    .tag-bar a, .menu-button, #gallery`).on('click',() => {
+    bar.hide("blind", 100);
+    tags.hide("blind", 100);
+    bar.removeClass('active').addClass('disabled');
+    tags.removeClass('active').addClass('disabled');
   });
