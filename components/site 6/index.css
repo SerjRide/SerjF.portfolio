@@ -171,3 +171,41 @@ div.dataTables_wrapper div.dataTables_filter input::placeholder {
 .col-md-2.my small {
   font-size: 40%;
 }
+
+#media-1, #media-2 {
+  display: none;
+}
+
+@media screen and (max-width:991px) {
+  .sidebar-fixed.position-fixed {
+    display: none;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+
+  .navbar {
+    margin-left: 0;
+  }
+
+  #media-1, #media-2 {
+    display: block;
+  }
+
+  .col-md-2.my section {
+    font-size: 16pt;
+  }
+}
+
+@media screen and (max-width:470px) {
+  .btn-outline-elegant {
+    color: white!important;
+  }
+}
+
+@media screen and (max-width:321px) {
+  .page-link {
+    padding: .5rem .75rem 0px 8px;
+  }
+}

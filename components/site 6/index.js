@@ -253,7 +253,7 @@ const news = `
   const tables = `
     <div class="jumbotron mdb-color lighten-2 white-text news">
     <table id="dtMaterialDesignExample"
-      class="table table-striped table-hover"
+      class="table table-striped table-responsive"
       cellspacing="0"
       width="100%">
         <thead>
