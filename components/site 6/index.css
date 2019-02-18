@@ -176,6 +176,10 @@ div.dataTables_wrapper div.dataTables_filter input::placeholder {
   display: none;
 }
 
+.table-responsive {
+  display: table;
+}
+
 @media screen and (max-width:991px) {
   .sidebar-fixed.position-fixed {
     display: none;
@@ -195,6 +199,12 @@ div.dataTables_wrapper div.dataTables_filter input::placeholder {
 
   .col-md-2.my section {
     font-size: 16pt;
+  }
+}
+
+@media screen and (max-width:659px) {
+  .table-responsive {
+    display: block;
   }
 }
 
