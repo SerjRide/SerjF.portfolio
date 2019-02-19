@@ -21,6 +21,10 @@
   width: 75%;
 }
 
+.icon i {
+  color: white;
+}
+
 header {
   display: flex;
   flex-flow: column;
