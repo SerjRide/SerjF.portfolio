@@ -26,6 +26,10 @@ nav, .slide-bar, .tag-bar   {
   background-color: rgba(255, 255, 255, 0.14);
 }
 
+.fab {
+  padding-top: 2px;
+}
+
 nav {
   display: inline;
   position: absolute;
