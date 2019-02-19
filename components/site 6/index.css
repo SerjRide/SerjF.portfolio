@@ -193,7 +193,7 @@ div.dataTables_wrapper div.dataTables_filter input::placeholder {
     margin-left: 0;
   }
 
-  #media-1, #media-2 {
+  #media-1, #media-2, #media-3 {
     display: block;
   }
 
