@@ -170,6 +170,15 @@ header img {
   color: white;
   border: solid 0px black;
 }
+
+.icon {
+  font-size: 24pt;
+}
+
+.icon i {
+  color: #b8feff;
+}
+
 @media screen and (max-width:1030px){
   .main-block {
     background-color: #111;
