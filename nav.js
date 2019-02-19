@@ -27,6 +27,11 @@ $('#import-nav').html(
         <li id="nav-about" class="nav-item active">
           <a class="nav-link" href="#about">ABOUT</a>
         </li>
+        <li id="nav-about" class="nav-item active">
+          <a class="nav-link icon" href="https://github.com/SerjRide">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>`

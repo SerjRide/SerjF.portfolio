@@ -346,6 +346,15 @@ footer{
   padding: 0 20% 0 20%;
 }
 
+.icon {
+  font-size: 16pt;
+  transition: 0.3s;
+}
+
+.icon:hover {
+  transform: translate(0,-5px);
+}
+
 @media only screen and (max-width: 768px) {
 
   .intro {
