@@ -389,7 +389,7 @@ $('#prof').on('click',() => {
 
 $('.btn-tables').on('click',() => {
   parseLi();
-  const url = 'http://jsonplaceholder.typicode.com/posts';
+  const url = 'https://jsonplaceholder.typicode.com/posts';
 
   const getPosts = async (url) => {
     const res = await fetch(url);
