@@ -8,6 +8,7 @@ $("#modal-1").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 1')
 });
+
 $("#modal-2").on("click",() => {
   $('.modalName').text(`SOUNDPLACE black decision`);
   $('.modalText')
@@ -18,6 +19,7 @@ $("#modal-2").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 2')
 });
+
 $("#modal-3").on("click",() => {
   $('.modalName').text(`STYLISH HOME dark decision`);
   $('.modalText')
@@ -28,6 +30,7 @@ $("#modal-3").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 3')
 });
+
 $("#modal-4").on("click",() => {
   $('.modalName').text(`STYLISH HOME colorful solution`);
   $('.modalText')
@@ -38,6 +41,7 @@ $("#modal-4").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 4')
 });
+
 $("#modal-5").on("click",() => {
   $('.modalName').text(`Star Claster`);
   $('.modalText')
@@ -48,6 +52,7 @@ $("#modal-5").on("click",() => {
   $('.modalLink')
     .attr('href','./components/site 5')
 });
+
 $("#modal-6").on("click",() => {
   $('.modalName').text(`Fractal Board`);
   $('.modalText')
@@ -58,6 +63,17 @@ $("#modal-6").on("click",() => {
     <img class="imgUnderModel" src="../../img/portfolio/p6-1.jpg">`)
   $('.modalLink')
     .attr('href','./components/site 6')
+});
+
+$("#modal-7").on("click",() => {
+  $('.modalName').text(`React Memory Base`);
+  $('.modalText')
+    .text(`Пример простого SPA-приложения, написанного на React в связке с Redux.  Приложние создавалась с целью облегчить процесс запоминания больших объемов информации. Предоставляет возможность написания своих вопрос и ответав к ним, для дальнейшей самопроверки. Вопросы создаются внутри отдельных категорий, которые так же можно создавать, удалять и редактировать. При добавлении новых вопросов, автоматическая создаётся дефолтная категория - NEW, вопросы в которой будут отображаться пользователю на протяжении 3-х дней. Так же есть возможность сохранения вопросов в отдельную категорию "закладки". Приложение не использует никаких БД и все данные хранятся в local storage на стороне клиента.    `);
+  $('.spanText').html('<span>Используемые технологии: </span> React.js, Redux');
+  $('.modalImg')
+    .html(`<img class="imgUnderModel" src="../../img/portfolio/p7.jpg">`)
+  $('.modalLink')
+    .attr('href','https://serjride.github.io/redux-memory-base/')
 });
 
 $('div.web-works').show(300);
