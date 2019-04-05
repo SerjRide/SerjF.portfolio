@@ -442,3 +442,18 @@ footer{
     right: 73%;
   }
 }
+
+::selection {
+  color:#fff;
+  background:#C8C8C8;
+}
+
+::-moz-selection {
+  color:#fff;
+  background:#C8C8C8;
+}
+
+::-webkit-selection {
+  color:#fff;
+  background:#C8C8C8;
+}
