@@ -116,8 +116,7 @@ function navScroll(exp, scrollCent) {
 
 $(document).on('scroll',() => {
   navScroll(exp, scrollCent)
-  let punct = $('#engLang').offset().top - 150;
-  if ($(document).scrollTop() >= punct ){
+  if ($(document).scrollTop() >= 100 ){
     $(".up-button").fadeIn(300)
   }else $(".up-button").fadeOut(100)
 });
